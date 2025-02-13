@@ -3,11 +3,13 @@ from datetime import datetime
 import json
 import os
 from typing import List
-from pymongo.mongo_client import MongoClient
+from pymongo import MongoClient
 from dotenv import load_dotenv
 
 load_dotenv()
 uri = os.getenv("MONGODB_URI")
+db_name = os.getenv("DB_NAME")
+collection_name = os.getenv("COLLECTION_NAME")
 
 
 @dataclass
@@ -65,4 +67,4 @@ def import_users(json_file: str, mongo_uri: str, db_name: str, collection_name: 
 
 
 if __name__ == "__main__":
-    import_users("udata.json", uri, "testDB", "users")
+    import_users("../udata.json", uri, db_name, collection_name)

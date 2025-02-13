@@ -46,7 +46,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch, defineProps, defineEmits } from 'vue'
+import { ref, watch, defineEmits } from 'vue'
 import type { User } from 'components/models'
 
 const props = defineProps<{ visible: boolean; user: User | null }>()

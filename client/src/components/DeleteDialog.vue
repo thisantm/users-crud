@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, defineEmits } from 'vue'
+import { defineEmits } from 'vue'
 
 defineProps<{ visible: boolean }>()
 const emit = defineEmits(['update:visible', 'confirm'])
