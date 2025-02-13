@@ -21,9 +21,9 @@ cp client/env.sample client/.env
 # Edit the client/.env file to set the appropriate variables
 ```
 
-## Running the Setup Scripts
+## Running the Setup and Run Scripts
 
-You can either run the setup scripts or follow the manual instructions below.
+You can either run the setup and run scripts or follow the manual instructions below.
 
 To run the parser, run the following script:
 
@@ -34,13 +34,13 @@ bash run_parser.sh
 To setup and run the server, run the following script: (it will only setup if there is no venv folder at root)
 
 ```bash
-bash setup_server.sh
+bash run_server.sh
 ```
 
 To setup and run the client, run the following script: (it will only setup if there is no node_modules folder in the client folder)
 
 ```bash
-bash setup_client.sh
+bash run_client.sh
 ```
 
 ## Manual Setup
